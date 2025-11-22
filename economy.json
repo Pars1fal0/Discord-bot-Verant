@@ -1,0 +1,150 @@
+{
+    "1020339454306697309": {
+        "balance": 85809043,
+        "last_daily": "2025-11-22T19:54:31.142457",
+        "last_work": null,
+        "last_weekly": null,
+        "last_monthly": "2025-11-22T20:42:36.626206",
+        "inventory": [],
+        "game_stats": {
+            "slots_played": 0,
+            "slots_won": 0,
+            "roulette_played": 0,
+            "roulette_won": 0,
+            "coinflip_played": 0,
+            "coinflip_won": 0,
+            "total_won": 0,
+            "total_lost": 0
+        },
+        "achievements": {
+            "first_daily": {
+                "unlocked": true,
+                "date": "2025-11-22T19:54:31.193527"
+            }
+        },
+        "transactions": [
+            {
+                "type": "game",
+                "amount": -10000000,
+                "timestamp": "2025-11-22T20:51:12.219541",
+                "details": "Результат игры"
+            },
+            {
+                "type": "game",
+                "amount": -100000,
+                "timestamp": "2025-11-22T20:50:30.815046",
+                "details": "Результат игры"
+            },
+            {
+                "type": "game",
+                "amount": -100,
+                "timestamp": "2025-11-22T20:50:10.326009",
+                "details": "Результат игры"
+            },
+            {
+                "type": "bank",
+                "amount": 1000000,
+                "timestamp": "2025-11-22T20:48:56.658253",
+                "details": "Банковская транзакция"
+            },
+            {
+                "type": "social",
+                "amount": -5000000,
+                "timestamp": "2025-11-22T20:47:47.915782",
+                "details": "Социальная транзакция"
+            },
+            {
+                "type": "business",
+                "amount": -100000,
+                "timestamp": "2025-11-22T20:47:11.461926",
+                "details": "Доход от бизнеса"
+            },
+            {
+                "type": "tournament",
+                "amount": 0,
+                "timestamp": "2025-11-22T20:42:46.882925",
+                "details": "Турнир"
+            },
+            {
+                "type": "monthly",
+                "amount": 8561,
+                "timestamp": "2025-11-22T20:42:36.648315",
+                "details": "Ежемесячная награда"
+            },
+            {
+                "type": "tournament",
+                "amount": -1,
+                "timestamp": "2025-11-22T20:42:12.739081",
+                "details": "Турнир"
+            },
+            {
+                "type": "daily",
+                "amount": 433,
+                "timestamp": "2025-11-22T19:54:31.170445",
+                "details": "Ежедневная награда"
+            },
+            {
+                "type": "level_up",
+                "amount": 150,
+                "timestamp": "2025-11-22T19:53:46.479029",
+                "details": "Достижение 3 уровня"
+            }
+        ]
+    },
+    "746421171066634301": {
+        "balance": 5000390,
+        "last_daily": "2025-11-22T20:41:39.960816",
+        "last_work": null,
+        "last_weekly": null,
+        "last_monthly": null,
+        "inventory": [],
+        "game_stats": {
+            "slots_played": 0,
+            "slots_won": 0,
+            "roulette_played": 0,
+            "roulette_won": 0,
+            "coinflip_played": 0,
+            "coinflip_won": 0,
+            "total_won": 0,
+            "total_lost": 0
+        },
+        "achievements": {
+            "first_daily": {
+                "unlocked": true,
+                "date": "2025-11-22T20:41:39.990088"
+            }
+        },
+        "transactions": [
+            {
+                "type": "level_up",
+                "amount": 100,
+                "timestamp": "2025-11-22T20:49:42.548217",
+                "details": "Достижение 2 уровня"
+            },
+            {
+                "type": "social",
+                "amount": 5000000,
+                "timestamp": "2025-11-22T20:47:47.961991",
+                "details": "Социальная транзакция"
+            },
+            {
+                "type": "tournament",
+                "amount": 1,
+                "timestamp": "2025-11-22T20:42:46.853728",
+                "details": "Турнир"
+            },
+            {
+                "type": "tournament",
+                "amount": -1,
+                "timestamp": "2025-11-22T20:42:35.669165",
+                "details": "Турнир"
+            },
+            {
+                "type": "daily",
+                "amount": 290,
+                "timestamp": "2025-11-22T20:41:39.978937",
+                "details": "Ежедневная награда"
+            }
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "1020339454306697309": {
+        "xp": 140,
+        "level": 100,
+        "total_xp": 713,
+        "messages_sent": 17,
+        "last_xp_gain": "2025-11-22T20:51:21.130537",
+        "last_dailyxp": "2025-11-22T19:53:46.034885",
+        "last_reaction_xp": null,
+        "voice_xp_last": null,
+        "level_up_notifications": true,
+        "reaction_count_hour": 0,
+        "reaction_hour_start": null
+    },
+    "746421171066634301": {
+        "xp": 52,
+        "level": 2,
+        "total_xp": 207,
+        "messages_sent": 10,
+        "last_xp_gain": "2025-11-22T20:51:21.491238",
+        "last_dailyxp": null,
+        "last_reaction_xp": null,
+        "voice_xp_last": null,
+        "level_up_notifications": true,
+        "reaction_count_hour": 0,
+        "reaction_hour_start": null
+    }
+}

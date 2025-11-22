@@ -1,0 +1,30 @@
+{
+    "companies": {
+        "TECH": {
+            "name": "TechCorp",
+            "price": 104,
+            "change": 4.0
+        },
+        "FOOD": {
+            "name": "FoodChain",
+            "price": 45,
+            "change": -10.0
+        },
+        "GAME": {
+            "name": "GameDev",
+            "price": 81,
+            "change": 8.0
+        },
+        "CRYPTO": {
+            "name": "CryptoEx",
+            "price": 150,
+            "change": 0.0
+        },
+        "ENERGY": {
+            "name": "PowerCo",
+            "price": 122,
+            "change": 1.67
+        }
+    },
+    "portfolios": {}
+}

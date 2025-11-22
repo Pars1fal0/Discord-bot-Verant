@@ -1,0 +1,15 @@
+{
+    "1430873717961134122": [
+        {
+            "timestamp": "2025-11-22T20:47:47.962953",
+            "type": "economy",
+            "data": {
+                "user_id": "1020339454306697309",
+                "user_name": "Pars1fal",
+                "transaction_type": "Подарок",
+                "amount": 5000000,
+                "details": "Получатель: Kan1es"
+            }
+        }
+    ]
+}
