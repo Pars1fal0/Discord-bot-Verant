@@ -1,0 +1,4 @@
+# Discord Bot Dependencies
+# Updated for Python 3.13 compatibility
+discord.py>=2.6.0
+python-dotenv>=1.0.0

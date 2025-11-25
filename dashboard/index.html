@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Verant - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🤖</div>
+                    <div class="logo-text">
+                        <h1>Discord Bot Verant</h1>
+                        <p>Панель управления</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="theme-toggle-btn" id="themeToggle" title="Переключить тему">
+                        <span class="icon">🌙</span>
+                    </button>
+                    <button class="refresh-btn" id="refreshBtn">
+                        <span class="icon">🔄</span>
+                        <span>Обновить</span>
+                    </button>
+                    <div class="last-update">
+                        Обновлено: <span id="lastUpdate">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Overview Stats -->
+            <section class="section">
+                <h2 class="section-title">📊 Общая статистика</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-content">
+                            <div class="stat-label">Пользователей</div>
+                            <div class="stat-value" id="totalUsers">-</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💎</div>
+                        <div class="stat-content">
+                            <div class="stat-label">Всего крионов</div>
+                            <div class="stat-value" id="totalBalance">-</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🏦</div>
+                        <div class="stat-content">
+                            <div class="stat-label">В банке</div>
+                            <div class="stat-value" id="totalBank">-</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🏢</div>
+                        <div class="stat-content">
+                            <div class="stat-label">Бизнесов</div>
+                            <div class="stat-value" id="totalBusinesses">-</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎮</div>
+                        <div class="stat-content">
+                            <div class="stat-label">Игр сыграно</div>
+                            <div class="stat-value" id="totalGames">-</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚔️</div>
+                        <div class="stat-content">
+                            <div class="stat-label">Дуэлей</div>
+                            <div class="stat-value" id="totalDuels">-</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="section">
+                <h2 class="section-title">📈 Аналитика</h2>
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Распределение богатства</h3>
+                        <canvas id="wealthChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Распределение уровней</h3>
+                        <canvas id="levelsChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leaderboards -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏆 Лидерборды</h2>
+                    <div class="search-box">
+                        <input type="text" id="leaderboardSearch" placeholder="🔍 Поиск по ID пользователя..."
+                            class="search-input">
+                    </div>
+                </div>
+                <div class="leaderboards-grid">
+                    <!-- Top Rich -->
+                    <div class="leaderboard-card">
+                        <h3 class="leaderboard-title">💎 Топ богачей</h3>
+                        <div class="leaderboard-list" id="topRich">
+                            <div class="loading">Загрузка...</div>
+                        </div>
+                    </div>
+
+                    <!-- Top Levels -->
+                    <div class="leaderboard-card">
+                        <h3 class="leaderboard-title">⭐ Топ по уровням</h3>
+                        <div class="leaderboard-list" id="topLevels">
+                            <div class="loading">Загрузка...</div>
+                        </div>
+                    </div>
+
+                    <!-- Top PvP -->
+                    <div class="leaderboard-card">
+                        <h3 class="leaderboard-title">⚔️ Топ дуэлянтов</h3>
+                        <div class="leaderboard-list" id="topPvP">
+                            <div class="loading">Загрузка...</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Transactions -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">💸 Последние транзакции</h2>
+                    <div class="transaction-filters">
+                        <input type="text" id="transactionSearch" placeholder="🔍 Поиск..." class="search-input">
+                        <select id="transactionTypeFilter" class="filter-select">
+                            <option value="all">Все типы</option>
+                            <option value="daily">Ежедневные</option>
+                            <option value="weekly">Еженедельные</option>
+                            <option value="monthly">Ежемесячные</option>
+                            <option value="work">Работа</option>
+                            <option value="game">Игры</option>
+                            <option value="bank">Банк</option>
+                            <option value="business">Бизнес</option>
+                            <option value="social">Социальные</option>
+                            <option value="tournament">Турниры</option>
+                            <option value="level_up">Уровни</option>
+                            <option value="crime">Преступления</option>
+                            <option value="pvp">PvP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="transactions-card">
+                    <div class="transactions-list" id="transactionsList">
+                        <div class="loading">Загрузка...</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Made with ❤️ and ☕ | Discord Bot Verant Dashboard</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

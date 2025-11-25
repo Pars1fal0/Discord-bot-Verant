@@ -5,5 +5,12 @@
         "loan": 1100000,
         "loan_since": "2025-11-22T20:48:56.632590",
         "loan_deadline": "2025-11-29T20:48:56.607931"
+    },
+    "746421171066634301": {
+        "deposit": 3000000,
+        "deposit_since": "2025-11-25T09:22:53.485774",
+        "loan": 0,
+        "loan_since": null,
+        "loan_deadline": null
     }
 }

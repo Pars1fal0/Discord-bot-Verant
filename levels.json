@@ -24,5 +24,18 @@
         "level_up_notifications": true,
         "reaction_count_hour": 0,
         "reaction_hour_start": null
+    },
+    "438685737966370816": {
+        "xp": 22,
+        "level": 1,
+        "total_xp": 22,
+        "messages_sent": 1,
+        "last_xp_gain": "2025-11-25T09:18:48.841672",
+        "last_dailyxp": null,
+        "last_reaction_xp": null,
+        "voice_xp_last": null,
+        "level_up_notifications": true,
+        "reaction_count_hour": 0,
+        "reaction_hour_start": null
     }
 }

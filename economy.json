@@ -1,6 +1,6 @@
 {
     "1020339454306697309": {
-        "balance": 85809043,
+        "balance": 85816291,
         "last_daily": "2025-11-22T19:54:31.142457",
         "last_work": null,
         "last_weekly": null,
@@ -23,6 +23,18 @@
             }
         },
         "transactions": [
+            {
+                "type": "business",
+                "amount": 48,
+                "timestamp": "2025-11-25T09:08:55.665946",
+                "details": "Доход от бизнеса"
+            },
+            {
+                "type": "business",
+                "amount": 7200,
+                "timestamp": "2025-11-25T08:59:14.709421",
+                "details": "Доход от бизнеса"
+            },
             {
                 "type": "game",
                 "amount": -10000000,
@@ -92,11 +104,11 @@
         ]
     },
     "746421171066634301": {
-        "balance": 5000390,
-        "last_daily": "2025-11-22T20:41:39.960816",
+        "balance": 2006029,
+        "last_daily": "2025-11-25T09:17:42.120921",
         "last_work": null,
         "last_weekly": null,
-        "last_monthly": null,
+        "last_monthly": "2025-11-25T12:45:30.106224",
         "inventory": [],
         "game_stats": {
             "slots_played": 0,
@@ -115,6 +127,30 @@
             }
         },
         "transactions": [
+            {
+                "type": "monthly",
+                "amount": 5168,
+                "timestamp": "2025-11-25T12:45:30.109413",
+                "details": "Ежемесячная награда"
+            },
+            {
+                "type": "bank",
+                "amount": -1000000,
+                "timestamp": "2025-11-25T09:23:06.993683",
+                "details": "Банковская транзакция"
+            },
+            {
+                "type": "bank",
+                "amount": -2000000,
+                "timestamp": "2025-11-25T09:22:53.485347",
+                "details": "Банковская транзакция"
+            },
+            {
+                "type": "daily",
+                "amount": 471,
+                "timestamp": "2025-11-25T09:17:42.121476",
+                "details": "Ежедневная награда"
+            },
             {
                 "type": "level_up",
                 "amount": 100,
@@ -143,6 +179,38 @@
                 "type": "daily",
                 "amount": 290,
                 "timestamp": "2025-11-22T20:41:39.978937",
+                "details": "Ежедневная награда"
+            }
+        ]
+    },
+    "438685737966370816": {
+        "balance": 100483,
+        "last_daily": "2025-11-25T09:19:02.073091",
+        "last_work": null,
+        "last_weekly": null,
+        "last_monthly": null,
+        "inventory": [],
+        "game_stats": {
+            "slots_played": 0,
+            "slots_won": 0,
+            "roulette_played": 0,
+            "roulette_won": 0,
+            "coinflip_played": 0,
+            "coinflip_won": 0,
+            "total_won": 0,
+            "total_lost": 0
+        },
+        "achievements": {
+            "first_daily": {
+                "unlocked": true,
+                "date": "2025-11-25T09:19:02.074942"
+            }
+        },
+        "transactions": [
+            {
+                "type": "daily",
+                "amount": 483,
+                "timestamp": "2025-11-25T09:19:02.074405",
                 "details": "Ежедневная награда"
             }
         ]
